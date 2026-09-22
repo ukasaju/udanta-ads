@@ -1,7 +1,6 @@
 {
   "_comment": "Udanta published ads. Editing this file changes what every install shows on its next launch. See README.md.",
   "updated": "2026-09-22",
-
   "ads": [
     {
       "id": "appeal-flood-relief",
@@ -23,7 +22,9 @@
       },
       "active": true,
       "weight": 10,
-      "placements": ["banner"]
+      "placements": [
+        "banner"
+      ]
     },
     {
       "id": "appeal-flood-relief",
@@ -45,9 +46,114 @@
       },
       "active": true,
       "weight": 10,
-      "placements": ["banner"]
+      "placements": [
+        "banner"
+      ]
+    },
+    {
+      "id": "greeting-dashain-2083",
+      "lang": "en",
+      "advertiser": "Udanta",
+      "headline": "Happy Dashain",
+      "body": "Wishing you a joyful Bada Dashain.",
+      "cta": "Festival calendar",
+      "url": "app://calendar",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/dashain.png"
+      },
+      "tint": {
+        "background": "#6E1220",
+        "text": "#FFFFFF",
+        "muted": "#F2CBC4",
+        "accent": "#FFD166"
+      },
+      "active": true,
+      "startsAt": "2026-10-10T18:15:00Z",
+      "endsAt": "2026-10-23T18:15:00Z",
+      "weight": 8,
+      "placements": [
+        "banner"
+      ]
+    },
+    {
+      "id": "greeting-dashain-2083",
+      "lang": "ne",
+      "advertiser": "उदन्त",
+      "headline": "शुभ दशैं",
+      "body": "उदन्त परिवारको तर्फबाट हार्दिक शुभकामना।",
+      "cta": "पात्रो हेर्नुहोस्",
+      "url": "app://calendar",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/dashain.png"
+      },
+      "tint": {
+        "background": "#6E1220",
+        "text": "#FFFFFF",
+        "muted": "#F2CBC4",
+        "accent": "#FFD166"
+      },
+      "active": true,
+      "startsAt": "2026-10-10T18:15:00Z",
+      "endsAt": "2026-10-23T18:15:00Z",
+      "weight": 8,
+      "placements": [
+        "banner"
+      ]
+    },
+    {
+      "id": "greeting-tihar-2083",
+      "lang": "en",
+      "advertiser": "Udanta",
+      "headline": "Happy Tihar",
+      "body": "May the lights bring you a bright year.",
+      "cta": "Festival calendar",
+      "url": "app://calendar",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/tihar.png"
+      },
+      "tint": {
+        "background": "#1A1140",
+        "text": "#FFFFFF",
+        "muted": "#CBC0EC",
+        "accent": "#FFB347"
+      },
+      "active": true,
+      "startsAt": "2026-11-06T18:15:00Z",
+      "endsAt": "2026-11-12T18:15:00Z",
+      "weight": 8,
+      "placements": [
+        "banner"
+      ]
+    },
+    {
+      "id": "greeting-tihar-2083",
+      "lang": "ne",
+      "advertiser": "उदन्त",
+      "headline": "शुभ तिहार",
+      "body": "दीपावलीको हार्दिक मङ्गलमय शुभकामना।",
+      "cta": "पात्रो हेर्नुहोस्",
+      "url": "app://calendar",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/tihar.png"
+      },
+      "tint": {
+        "background": "#1A1140",
+        "text": "#FFFFFF",
+        "muted": "#CBC0EC",
+        "accent": "#FFB347"
+      },
+      "active": true,
+      "startsAt": "2026-11-06T18:15:00Z",
+      "endsAt": "2026-11-12T18:15:00Z",
+      "weight": 8,
+      "placements": [
+        "banner"
+      ]
     }
   ],
-
   "disabled": []
 }
