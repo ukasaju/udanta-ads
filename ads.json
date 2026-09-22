@@ -153,6 +153,64 @@
       "placements": [
         "banner"
       ]
+    },
+    {
+      "id": "share-udanta",
+      "lang": "en",
+      "advertiser": "Udanta",
+      "headline": "Enjoying Udanta?",
+      "body": "Share it with friends and family.",
+      "cta": "Share",
+      "url": "app://share",
+      "share": {
+        "text": "Udanta — Nepali news from every major publisher, in one place.",
+        "ios": "https://apps.apple.com/app/id6812846563",
+        "android": "https://play.google.com/store/apps/details?id=com.udanta.app"
+      },
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/share.png"
+      },
+      "tint": {
+        "background": "#12504B",
+        "text": "#FFFFFF",
+        "muted": "#A9D3CE",
+        "accent": "#FFD166"
+      },
+      "active": false,
+      "weight": 3,
+      "placements": [
+        "banner"
+      ]
+    },
+    {
+      "id": "share-udanta",
+      "lang": "ne",
+      "advertiser": "उदन्त",
+      "headline": "उदन्त मन पर्‍यो?",
+      "body": "साथी र परिवारसँग बाँड्नुहोस्।",
+      "cta": "बाँड्नुहोस्",
+      "url": "app://share",
+      "share": {
+        "text": "उदन्त — सबै प्रमुख नेपाली समाचार एकै ठाउँमा।",
+        "ios": "https://apps.apple.com/app/id6812846563",
+        "android": "https://play.google.com/store/apps/details?id=com.udanta.app"
+      },
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/share.png"
+      },
+      "tint": {
+        "background": "#12504B",
+        "text": "#FFFFFF",
+        "muted": "#A9D3CE",
+        "accent": "#FFD166"
+      },
+      "active": false,
+      "weight": 3,
+      "placements": [
+        "banner"
+      ]
     }
   ],
   "disabled": []
