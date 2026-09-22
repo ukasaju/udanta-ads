@@ -1,0 +1,53 @@
+{
+  "_comment": "Udanta published ads. Editing this file changes what every install shows on its next launch. See README.md.",
+  "updated": "2026-09-22",
+
+  "ads": [
+    {
+      "id": "appeal-flood-relief",
+      "lang": "en",
+      "advertiser": "Udanta",
+      "headline": "Help Nepal's flood survivors",
+      "body": "Donate to the PM Disaster Relief Fund.",
+      "cta": "Donate",
+      "url": "https://pmdrf.nchl.com.np/",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/flood-relief.png"
+      },
+      "tint": {
+        "background": "#0B3A66",
+        "text": "#FFFFFF",
+        "muted": "#B9D2EA",
+        "accent": "#FFC44B"
+      },
+      "active": true,
+      "weight": 10,
+      "placements": ["banner"]
+    },
+    {
+      "id": "appeal-flood-relief",
+      "lang": "ne",
+      "advertiser": "उदन्त",
+      "headline": "बाढीपीडितलाई सहयोग गरौं",
+      "body": "प्रधानमन्त्री विपद् राहत कोषमा सहयोग गर्नुहोस्।",
+      "cta": "सहयोग गर्नुहोस्",
+      "url": "https://pmdrf.nchl.com.np/",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/flood-relief.png"
+      },
+      "tint": {
+        "background": "#0B3A66",
+        "text": "#FFFFFF",
+        "muted": "#B9D2EA",
+        "accent": "#FFC44B"
+      },
+      "active": true,
+      "weight": 10,
+      "placements": ["banner"]
+    }
+  ],
+
+  "disabled": []
+}
