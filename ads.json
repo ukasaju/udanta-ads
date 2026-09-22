@@ -177,7 +177,7 @@
         "muted": "#A9D3CE",
         "accent": "#FFD166"
       },
-      "active": false,
+      "active": true,
       "weight": 3,
       "placements": [
         "banner"
@@ -206,7 +206,7 @@
         "muted": "#A9D3CE",
         "accent": "#FFD166"
       },
-      "active": false,
+      "active": true,
       "weight": 3,
       "placements": [
         "banner"
