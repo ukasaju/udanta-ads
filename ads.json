@@ -74,7 +74,8 @@
       "weight": 8,
       "placements": [
         "banner"
-      ]
+      ],
+      "house": true
     },
     {
       "id": "greeting-dashain-2083",
@@ -100,7 +101,8 @@
       "weight": 8,
       "placements": [
         "banner"
-      ]
+      ],
+      "house": true
     },
     {
       "id": "greeting-tihar-2083",
@@ -126,7 +128,8 @@
       "weight": 8,
       "placements": [
         "banner"
-      ]
+      ],
+      "house": true
     },
     {
       "id": "greeting-tihar-2083",
@@ -152,7 +155,8 @@
       "weight": 8,
       "placements": [
         "banner"
-      ]
+      ],
+      "house": true
     },
     {
       "id": "share-udanta",
@@ -181,7 +185,8 @@
       "weight": 3,
       "placements": [
         "banner"
-      ]
+      ],
+      "house": true
     },
     {
       "id": "share-udanta",
@@ -210,7 +215,8 @@
       "weight": 3,
       "placements": [
         "banner"
-      ]
+      ],
+      "house": true
     }
   ],
   "disabled": []
