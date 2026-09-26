@@ -121,11 +121,12 @@
         "accent": "#FFB347"
       },
       "active": true,
-      "startsAt": "2026-11-06T18:15:00Z",
+      "startsAt": "2026-09-01T00:00:00Z",
       "endsAt": "2026-11-12T18:15:00Z",
       "weight": 8,
       "placements": [
-        "banner"
+        "banner",
+        "feed"
       ]
     },
     {
@@ -147,11 +148,12 @@
         "accent": "#FFB347"
       },
       "active": true,
-      "startsAt": "2026-11-06T18:15:00Z",
+      "startsAt": "2026-09-01T00:00:00Z",
       "endsAt": "2026-11-12T18:15:00Z",
       "weight": 8,
       "placements": [
-        "banner"
+        "banner",
+        "feed"
       ]
     },
     {
