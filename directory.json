@@ -27,6 +27,94 @@
         "en": "Consular help for Nepalis abroad",
         "ne": "विदेशमा रहेका नेपालीका लागि कन्सुलर सहायता"
       }
+    },
+    {
+      "id": "kukl",
+      "name": {
+        "en": "KUKL water supply",
+        "ne": "काठमाडौँ उपत्यका खानेपानी"
+      },
+      "phones": [
+        "16600122202",
+        "01-4117356"
+      ],
+      "category": "utilities",
+      "note": {
+        "en": "Kathmandu valley, toll free first",
+        "ne": "काठमाडौँ उपत्यका, पहिलो नम्बर निःशुल्क"
+      }
+    },
+    {
+      "id": "kukl-tanker",
+      "name": {
+        "en": "KUKL water tanker",
+        "ne": "खानेपानी ट्यांकर"
+      },
+      "phones": [
+        "01-5210019",
+        "9700000732"
+      ],
+      "category": "utilities"
+    },
+    {
+      "id": "kukl-quality",
+      "name": {
+        "en": "KUKL water quality testing",
+        "ne": "पानी गुणस्तर परीक्षण"
+      },
+      "phones": [
+        "01-5210534",
+        "9700000716"
+      ],
+      "category": "utilities"
+    },
+    {
+      "id": "kukl-sanitation",
+      "name": {
+        "en": "KUKL sanitation",
+        "ne": "ढल तथा सरसफाइ"
+      },
+      "phones": [
+        "01-4332803",
+        "9700000705"
+      ],
+      "category": "utilities"
+    },
+    {
+      "id": "isp-worldlink",
+      "name": {
+        "en": "WorldLink",
+        "ne": "वर्ल्डलिंक"
+      },
+      "phones": [
+        "01-5970050",
+        "9801523050"
+      ],
+      "category": "utilities"
+    },
+    {
+      "id": "isp-mercantile",
+      "name": {
+        "en": "Mercantile Communications",
+        "ne": "मर्कान्टायल कम्युनिकेसन्स"
+      },
+      "phones": [
+        "01-4445920",
+        "01-4440773"
+      ],
+      "category": "utilities"
+    },
+    {
+      "id": "isp-broadlink",
+      "name": {
+        "en": "Broadlink",
+        "ne": "ब्रोडलिंक"
+      },
+      "phones": [
+        "01-5553020",
+        "01-5553021"
+      ],
+      "category": "utilities"
     }
   ]
 }
