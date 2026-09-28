@@ -2,25 +2,26 @@
   "_comment": "Udanta phone directory. Added to the numbers built into the app; reuse an id to correct one. Every entry must be verifiable from an official source - see the note in the app's src/data/directory.ts. Categories: emergency, health, utilities, transport, government, abroad.",
   "entries": [
     {
-      "id": "moh-hotline",
-      "name": { "en": "Health hotline", "ne": "स्वास्थ्य हटलाइन" },
-      "phones": ["1115"],
-      "category": "health",
-      "note": {
-        "en": "Free, from the Ministry of Health",
-        "ne": "निःशुल्क, स्वास्थ्य मन्त्रालयबाट"
-      }
-    },
-    {
       "id": "nea",
-      "name": { "en": "Nepal Electricity Authority", "ne": "नेपाल विद्युत् प्राधिकरण" },
-      "phones": ["01-4153051"],
+      "name": {
+        "en": "Nepal Electricity Authority",
+        "ne": "नेपाल विद्युत् प्राधिकरण"
+      },
+      "phones": [
+        "01-4153051"
+      ],
       "category": "utilities"
     },
     {
       "id": "mofa",
-      "name": { "en": "Ministry of Foreign Affairs", "ne": "परराष्ट्र मन्त्रालय" },
-      "phones": ["01-4200182", "01-4200183"],
+      "name": {
+        "en": "Ministry of Foreign Affairs",
+        "ne": "परराष्ट्र मन्त्रालय"
+      },
+      "phones": [
+        "01-4200182",
+        "01-4200183"
+      ],
       "category": "government",
       "note": {
         "en": "Consular help for Nepalis abroad",
