@@ -214,7 +214,7 @@
       "placements": [
         "banner"
       ],
-      "audiences":["nepal","abroad"]
+      "audiences":[]
     }
   ],
   "disabled": []
