@@ -184,7 +184,7 @@
       "placements": [
         "banner"
       ],
-      "audiences":["nepal"]
+      "audiences":["nepal","abroad""]
     },
     {
       "id": "share-udanta",
@@ -214,7 +214,7 @@
       "placements": [
         "banner"
       ],
-      "audiences":["nepal"]
+      "audiences":["nepal","abroad"]
     }
   ],
   "disabled": []
