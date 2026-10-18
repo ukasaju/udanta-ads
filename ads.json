@@ -1,6 +1,6 @@
 {
   "_comment": "Udanta published ads. Editing this file changes what every install shows on its next launch. See README.md.",
-  "updated": "2026-09-22",
+  "updated": "2026-10-18",
   "ads": [
     {
       "id": "appeal-flood-relief",
@@ -184,7 +184,7 @@
       "placements": [
         "banner"
       ],
-      "audiences":[]
+      "audiences": []
     },
     {
       "id": "share-udanta",
@@ -214,7 +214,75 @@
       "placements": [
         "banner"
       ],
-      "audiences":[]
+      "audiences": []
+    },
+    {
+      "id": "indreni-bhatbhateni-2026-10-en",
+      "advertiser": "Indreni Apartment",
+      "headline": "A furnished 3-bedroom at Bhatbhateni",
+      "body": "1,850 sq ft, two baths and a garage.",
+      "cta": "See the flat",
+      "url": "mailto:udanta.support@gmail.com?subject=Enquiry%3A%20furnished%203-bedroom%20at%20Indreni%20Apartment%2C%20Bhatbhateni&body=Dear%20Sir%20or%20Madam%2C%0A%0AI%20am%20writing%20with%20regard%20to%20the%20furnished%20three-bedroom%20apartment%20advertised%20at%20Indreni%20Apartment%2C%20Bhatbhateni%20%281%2C850%20sq%20ft%2C%20two%20bathrooms%2C%20one%20garage%29.%0A%0AI%20should%20be%20grateful%20if%20you%20could%20confirm%20the%20monthly%20rent%2C%20the%20deposit%20required%2C%20the%20minimum%20term%20of%20the%20lease%2C%20and%20the%20date%20from%20which%20the%20property%20is%20available.%0A%0AI%20would%20also%20like%20to%20arrange%20a%20viewing%20at%20your%20convenience.%20My%20preferred%20days%20and%20times%20are%3A%0A%0AName%3A%0ATelephone%3A%0A%0AYours%20faithfully%2C%0A",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+      },
+      "promo": {
+        "media": {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+        },
+        "headline": "Furnished 3-bedroom at Indreni, Bhatbhateni",
+        "body": "1,850 sq ft on a quiet, gated compound five minutes from Bhatbhateni — three bedrooms, two bathrooms, parking for one car, and furnished throughout, so you arrive with a suitcase rather than a lorry. Available now, on a long let.",
+        "cta": "Contact us",
+        "url": "mailto:udanta.support@gmail.com?subject=Enquiry%3A%20furnished%203-bedroom%20at%20Indreni%20Apartment%2C%20Bhatbhateni&body=Dear%20Sir%20or%20Madam%2C%0A%0AI%20am%20writing%20with%20regard%20to%20the%20furnished%20three-bedroom%20apartment%20advertised%20at%20Indreni%20Apartment%2C%20Bhatbhateni%20%281%2C850%20sq%20ft%2C%20two%20bathrooms%2C%20one%20garage%29.%0A%0AI%20should%20be%20grateful%20if%20you%20could%20confirm%20the%20monthly%20rent%2C%20the%20deposit%20required%2C%20the%20minimum%20term%20of%20the%20lease%2C%20and%20the%20date%20from%20which%20the%20property%20is%20available.%0A%0AI%20would%20also%20like%20to%20arrange%20a%20viewing%20at%20your%20convenience.%20My%20preferred%20days%20and%20times%20are%3A%0A%0AName%3A%0ATelephone%3A%0A%0AYours%20faithfully%2C%0A"
+      },
+      "active": true,
+      "weight": 3,
+      "lang": "en",
+      "placements": [
+        "banner",
+        "feed",
+        "card"
+      ],
+      "audiences": [
+        "nepal",
+        "abroad"
+      ]
+    },
+    {
+      "id": "indreni-bhatbhateni-2026-10-ne",
+      "advertiser": "इन्द्रेणी अपार्टमेन्ट",
+      "headline": "भाटभटेनीमा फर्निश्ड ३ बेडरुम",
+      "body": "१,८५० वर्गफिट, दुई बाथरुम र ग्यारेज।",
+      "cta": "अपार्टमेन्ट हेर्नुहोस्",
+      "url": "mailto:udanta.support@gmail.com?subject=%E0%A4%B8%E0%A5%8B%E0%A4%A7%E0%A4%AA%E0%A5%81%E0%A4%9B%3A%20%E0%A4%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80%20%E0%A4%85%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%AE%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%2C%20%E0%A4%AD%E0%A4%BE%E0%A4%9F%E0%A4%AD%E0%A4%9F%E0%A5%87%E0%A4%A8%E0%A5%80%20%E2%80%94%20%E0%A4%AB%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%A1%20%E0%A5%A9%20%E0%A4%AC%E0%A5%87%E0%A4%A1%E0%A4%B0%E0%A5%81%E0%A4%AE&body=%E0%A4%AE%E0%A4%B9%E0%A5%8B%E0%A4%A6%E0%A4%AF/%E0%A4%AE%E0%A4%B9%E0%A5%8B%E0%A4%A6%E0%A4%AF%E0%A4%BE%2C%0A%0A%E0%A4%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80%20%E0%A4%85%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%AE%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%2C%20%E0%A4%AD%E0%A4%BE%E0%A4%9F%E0%A4%AD%E0%A4%9F%E0%A5%87%E0%A4%A8%E0%A5%80%E0%A4%AE%E0%A4%BE%20%E0%A4%AD%E0%A4%BE%E0%A4%A1%E0%A4%BE%E0%A4%AE%E0%A4%BE%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%20%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A4%BF%E0%A4%8F%E0%A4%95%E0%A5%8B%20%E0%A4%AB%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%A1%20%E0%A4%A4%E0%A5%80%E0%A4%A8%20%E0%A4%AC%E0%A5%87%E0%A4%A1%E0%A4%B0%E0%A5%81%E0%A4%AE%E0%A4%95%E0%A5%8B%20%E0%A4%AB%E0%A5%8D%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%9F%20%28%E0%A5%A7%2C%E0%A5%AE%E0%A5%AB%E0%A5%A6%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%AB%E0%A4%BF%E0%A4%9F%2C%20%E0%A4%A6%E0%A5%81%E0%A4%88%20%E0%A4%AC%E0%A4%BE%E0%A4%A5%E0%A4%B0%E0%A5%81%E0%A4%AE%2C%20%E0%A4%8F%E0%A4%95%20%E0%A4%97%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B0%E0%A5%87%E0%A4%9C%29%20%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%AE%E0%A4%BE%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A4%95%E0%A5%8B%20%E0%A4%A5%E0%A4%BF%E0%A4%AF%E0%A5%8B%E0%A5%A4%0A%0A%E0%A4%AE%E0%A4%BE%E0%A4%B8%E0%A4%BF%E0%A4%95%20%E0%A4%AD%E0%A4%BE%E0%A4%A1%E0%A4%BE%2C%20%E0%A4%A7%E0%A4%B0%E0%A5%8C%E0%A4%9F%E0%A5%80%20%E0%A4%B0%E0%A4%95%E0%A4%AE%2C%20%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%A4%E0%A4%AE%20%E0%A4%95%E0%A4%B0%E0%A4%BE%E0%A4%B0%20%E0%A4%85%E0%A4%B5%E0%A4%A7%E0%A4%BF%20%E0%A4%B0%20%E0%A4%95%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%87%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%BF%20%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%A8%20%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%9B%20%E0%A4%AD%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%81%E0%A4%B0%E0%A4%BE%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%87%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%81%E0%A4%A8%20%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%B0%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B0%E0%A5%8B%E0%A4%A7%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%9B%E0%A5%81%E0%A5%A4%0A%0A%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AD%E0%A4%B5%20%E0%A4%AD%E0%A4%8F%E0%A4%AE%E0%A4%BE%20%E0%A4%AB%E0%A5%8D%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%9F%20%E0%A4%B9%E0%A5%87%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A5%87%20%E0%A4%B8%E0%A4%AE%E0%A4%AF%20%E0%A4%AA%E0%A4%A8%E0%A4%BF%20%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A5%A4%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%E0%A4%88%20%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%A8%E0%A5%87%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%20%E0%A4%B0%20%E0%A4%B8%E0%A4%AE%E0%A4%AF%3A%0A%0A%E0%A4%A8%E0%A4%BE%E0%A4%AE%3A%0A%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95%20%E0%A4%A8%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%B0%3A%0A%0A%E0%A4%AD%E0%A4%B5%E0%A4%A6%E0%A5%80%E0%A4%AF%2C%0A",
+      "media": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+      },
+      "promo": {
+        "media": {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+        },
+        "headline": "इन्द्रेणी अपार्टमेन्ट, भाटभटेनी — फर्निश्ड ३ बेडरुम",
+        "body": "भाटभटेनीबाट पाँच मिनेटको शान्त, सुरक्षित कम्पाउन्डभित्र १,८५० वर्गफिटको फ्ल्याट — तीन बेडरुम, दुई बाथरुम, एक गाडीको पार्किङ, र पूरै फर्निश्ड। सामान बोक्नु पर्दैन, झोला लिएर सरे पुग्छ। अहिल्यै खाली छ, लामो अवधिका लागि।",
+        "cta": "सम्पर्क गर्नुहोस्",
+        "url": "mailto:udanta.support@gmail.com?subject=%E0%A4%B8%E0%A5%8B%E0%A4%A7%E0%A4%AA%E0%A5%81%E0%A4%9B%3A%20%E0%A4%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80%20%E0%A4%85%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%AE%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%2C%20%E0%A4%AD%E0%A4%BE%E0%A4%9F%E0%A4%AD%E0%A4%9F%E0%A5%87%E0%A4%A8%E0%A5%80%20%E2%80%94%20%E0%A4%AB%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%A1%20%E0%A5%A9%20%E0%A4%AC%E0%A5%87%E0%A4%A1%E0%A4%B0%E0%A5%81%E0%A4%AE&body=%E0%A4%AE%E0%A4%B9%E0%A5%8B%E0%A4%A6%E0%A4%AF/%E0%A4%AE%E0%A4%B9%E0%A5%8B%E0%A4%A6%E0%A4%AF%E0%A4%BE%2C%0A%0A%E0%A4%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80%20%E0%A4%85%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%AE%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%2C%20%E0%A4%AD%E0%A4%BE%E0%A4%9F%E0%A4%AD%E0%A4%9F%E0%A5%87%E0%A4%A8%E0%A5%80%E0%A4%AE%E0%A4%BE%20%E0%A4%AD%E0%A4%BE%E0%A4%A1%E0%A4%BE%E0%A4%AE%E0%A4%BE%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%20%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A4%BF%E0%A4%8F%E0%A4%95%E0%A5%8B%20%E0%A4%AB%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%A1%20%E0%A4%A4%E0%A5%80%E0%A4%A8%20%E0%A4%AC%E0%A5%87%E0%A4%A1%E0%A4%B0%E0%A5%81%E0%A4%AE%E0%A4%95%E0%A5%8B%20%E0%A4%AB%E0%A5%8D%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%9F%20%28%E0%A5%A7%2C%E0%A5%AE%E0%A5%AB%E0%A5%A6%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%AB%E0%A4%BF%E0%A4%9F%2C%20%E0%A4%A6%E0%A5%81%E0%A4%88%20%E0%A4%AC%E0%A4%BE%E0%A4%A5%E0%A4%B0%E0%A5%81%E0%A4%AE%2C%20%E0%A4%8F%E0%A4%95%20%E0%A4%97%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B0%E0%A5%87%E0%A4%9C%29%20%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%AE%E0%A4%BE%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F%E0%A4%95%E0%A5%8B%20%E0%A4%A5%E0%A4%BF%E0%A4%AF%E0%A5%8B%E0%A5%A4%0A%0A%E0%A4%AE%E0%A4%BE%E0%A4%B8%E0%A4%BF%E0%A4%95%20%E0%A4%AD%E0%A4%BE%E0%A4%A1%E0%A4%BE%2C%20%E0%A4%A7%E0%A4%B0%E0%A5%8C%E0%A4%9F%E0%A5%80%20%E0%A4%B0%E0%A4%95%E0%A4%AE%2C%20%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%A4%E0%A4%AE%20%E0%A4%95%E0%A4%B0%E0%A4%BE%E0%A4%B0%20%E0%A4%85%E0%A4%B5%E0%A4%A7%E0%A4%BF%20%E0%A4%B0%20%E0%A4%95%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%87%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%BF%20%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%A8%20%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%9B%20%E0%A4%AD%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%81%E0%A4%B0%E0%A4%BE%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%87%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%81%E0%A4%A8%20%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%B0%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B0%E0%A5%8B%E0%A4%A7%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%9B%E0%A5%81%E0%A5%A4%0A%0A%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AD%E0%A4%B5%20%E0%A4%AD%E0%A4%8F%E0%A4%AE%E0%A4%BE%20%E0%A4%AB%E0%A5%8D%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%9F%20%E0%A4%B9%E0%A5%87%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A5%87%20%E0%A4%B8%E0%A4%AE%E0%A4%AF%20%E0%A4%AA%E0%A4%A8%E0%A4%BF%20%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A5%A4%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%E0%A4%88%20%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%A8%E0%A5%87%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%20%E0%A4%B0%20%E0%A4%B8%E0%A4%AE%E0%A4%AF%3A%0A%0A%E0%A4%A8%E0%A4%BE%E0%A4%AE%3A%0A%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95%20%E0%A4%A8%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%B0%3A%0A%0A%E0%A4%AD%E0%A4%B5%E0%A4%A6%E0%A5%80%E0%A4%AF%2C%0A"
+      },
+      "active": true,
+      "weight": 3,
+      "lang": "ne",
+      "placements": [
+        "banner",
+        "feed",
+        "card"
+      ],
+      "audiences": [
+        "nepal",
+        "abroad"
+      ]
     }
   ],
   "disabled": []
