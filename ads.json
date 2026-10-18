@@ -219,7 +219,7 @@
     {
       "id": "indreni-bhatbhateni-2026-10-en",
       "advertiser": "Indreni Apartment",
-      "headline": "A furnished 3-bedroom at Bhatbhateni",
+      "headline": "For Rent- A furnished 3BHK at Bhatbhateni",
       "body": "1,850 sq ft, two baths and a garage.",
       "cta": "See the flat",
       "url": "app://promo",
@@ -232,6 +232,14 @@
           {
             "type": "image",
             "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+          },
+          {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_2.jpg"
+          },
+          {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_3.jpg"
           },
           {
             "type": "image",
@@ -254,8 +262,8 @@
             "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_8.jpeg"
           }
         ],
-        "headline": "Furnished 3-bedroom at Indreni, Bhatbhateni",
-        "body": "1,850 sq ft on a quiet, gated compound five minutes from Bhatbhateni — three bedrooms, two bathrooms, parking for one car, and furnished throughout, so you arrive with a suitcase rather than a lorry. Available now, on a long let.",
+        "headline": "For Rent: Furnished 3BHK at Indreni, Bhatbhateni",
+        "body": "1,850 sq ft on a quiet, gated compound five minutes from Bhatbhateni — three BHK, two bathrooms, parking for one car, and furnished throughout, so you arrive with a suitcase rather than a lorry. Available now, on a long let.",
         "cta": "Contact us",
         "url": "mailto:udanta.support@gmail.com?subject=Enquiry%3A%20furnished%203-bedroom%20at%20Indreni%20Apartment%2C%20Bhatbhateni&body=Dear%20Sir%20or%20Madam%2C%0A%0AI%20am%20writing%20with%20regard%20to%20the%20furnished%20three-bedroom%20apartment%20advertised%20at%20Indreni%20Apartment%2C%20Bhatbhateni%20%281%2C850%20sq%20ft%2C%20two%20bathrooms%2C%20one%20garage%29.%0A%0AI%20should%20be%20grateful%20if%20you%20could%20confirm%20the%20monthly%20rent%2C%20the%20deposit%20required%2C%20the%20minimum%20term%20of%20the%20lease%2C%20and%20the%20date%20from%20which%20the%20property%20is%20available.%0A%0AI%20would%20also%20like%20to%20arrange%20a%20viewing%20at%20your%20convenience.%20My%20preferred%20days%20and%20times%20are%3A%0A%0AName%3A%0ATelephone%3A%0A%0AYours%20faithfully%2C%0A"
       },
@@ -275,7 +283,7 @@
     {
       "id": "indreni-bhatbhateni-2026-10-ne",
       "advertiser": "इन्द्रेणी अपार्टमेन्ट",
-      "headline": "भाटभटेनीमा फर्निश्ड ३ बेडरुम",
+      "headline": "भाटभटेनीमा फर्निश्ड ३ BHK",
       "body": "१,८५० वर्गफिट, दुई बाथरुम र ग्यारेज।",
       "cta": "अपार्टमेन्ट हेर्नुहोस्",
       "url": "app://promo",
@@ -288,6 +296,14 @@
           {
             "type": "image",
             "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+          },
+          {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_2.jpg"
+          },
+          {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_3.jpg"
           },
           {
             "type": "image",
