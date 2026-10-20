@@ -132,6 +132,30 @@ SOURCES = {
 # Nothing left. Every column the app shows is fetched.
 BY_HAND: dict[str, str] = {}
 
+# ── Bank marks ──
+#
+# The app draws a bank's logo where the sheet gives it one and its
+# NEPSE ticker where it does not, at a fixed 50x28 either way.
+#
+# These are each bank's own favicon, taken from its own site, which is
+# the only square-ish mark a bank reliably publishes: the logos on
+# their homepages are wide lockups of logo plus wordmark that are
+# illegible shrunk into that tile. Four banks have none that could be
+# fetched — Citizens, Prabhu and Siddhartha serve an HTML page at the
+# favicon path and Kumari serves nothing — so those four keep their
+# ticker, which is what the fallback is for.
+#
+# Committed here rather than hot-linked: a bank redesigning its site
+# should not blank a column, and these are small.
+LOGO_BASE = 'https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/'
+LOGO_DIR = ROOT / 'bank-logos'
+
+
+def logo_for(bank_id: str) -> str | None:
+    """The published mark for a bank, or None if we do not have one."""
+    return f'{LOGO_BASE}{bank_id}.png' if (LOGO_DIR / f'{bank_id}.png').exists() else None
+
+
 problems: list[str] = []
 
 
@@ -419,6 +443,9 @@ def main() -> int:
         entry: dict = {'id': bank_id, 'name': {'en': name_en, 'ne': name_ne}}
         if symbol:
             entry['symbol'] = symbol
+        logo = logo_for(bank_id)
+        if logo:
+            entry['logo'] = logo
 
         was = previous.get(bank_id, {})
         if bank_id in savings:

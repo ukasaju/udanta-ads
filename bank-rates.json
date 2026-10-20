@@ -33,6 +33,7 @@
         "ne": "माछापुच्छ्रे बैंक"
       },
       "symbol": "MBL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/machhapuchchhre.png",
       "savings": {
         "min": 2.75,
         "max": 2.8
@@ -54,6 +55,7 @@
         "ne": "एनएमबी बैंक"
       },
       "symbol": "NMB",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/nmb.png",
       "savings": {
         "min": 2.75,
         "max": 2.75
@@ -76,6 +78,7 @@
         "ne": "सानिमा बैंक"
       },
       "symbol": "SANIMA",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/sanima.png",
       "savings": {
         "min": 2.75,
         "max": 2.8
@@ -96,6 +99,7 @@
         "ne": "नेपाल इन्भेष्टमेन्ट मेगा बैंक"
       },
       "symbol": "NIMB",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/nimb.png",
       "savings": {
         "min": 2.76,
         "max": 3.76
@@ -117,6 +121,7 @@
         "ne": "नबिल बैंक"
       },
       "symbol": "NABIL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/nabil.png",
       "savings": {
         "min": 2.75,
         "max": 2.8
@@ -141,6 +146,7 @@
         "ne": "नेपाल बैंक"
       },
       "symbol": "NBL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/nepal-bank.png",
       "savings": {
         "min": 2.75,
         "max": 2.75
@@ -161,6 +167,7 @@
         "ne": "नेपाल एसबिआई बैंक"
       },
       "symbol": "SBI",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/nsbi.png",
       "savings": {
         "min": 2.75,
         "max": 2.8
@@ -183,6 +190,7 @@
         "ne": "ग्लोबल आइएमई बैंक"
       },
       "symbol": "GBIME",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/global-ime.png",
       "savings": {
         "min": 2.75,
         "max": 2.75
@@ -205,6 +213,7 @@
         "ne": "एनआईसी एशिया बैंक"
       },
       "symbol": "NICA",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/nic-asia.png",
       "savings": {
         "min": 2.75,
         "max": 3.25
@@ -226,6 +235,7 @@
         "ne": "प्राइम कमर्सियल बैंक"
       },
       "symbol": "PCBL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/prime.png",
       "savings": {
         "min": 2.76,
         "max": 3.02
@@ -248,6 +258,7 @@
         "en": "Rastriya Banijya Bank",
         "ne": "राष्ट्रिय वाणिज्य बैंक"
       },
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/rbb.png",
       "savings": {
         "min": 2.75,
         "max": 2.8
@@ -271,6 +282,7 @@
         "ne": "हिमालयन बैंक"
       },
       "symbol": "HBL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/himalayan.png",
       "savings": {
         "min": 2.75,
         "max": 3.25
@@ -293,6 +305,7 @@
         "ne": "लक्ष्मी सनराइज बैंक"
       },
       "symbol": "LSL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/laxmi-sunrise.png",
       "savings": {
         "min": 2.75,
         "max": 2.8
@@ -363,6 +376,7 @@
         "ne": "स्ट्यान्डर्ड चार्टर्ड बैंक नेपाल"
       },
       "symbol": "SCB",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/scb.png",
       "savings": {
         "min": 2.75,
         "max": 2.75
@@ -383,6 +397,7 @@
         "ne": "एभरेष्ट बैंक"
       },
       "symbol": "EBL",
+      "logo": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/bank-logos/everest.png",
       "savings": {
         "min": 2.75,
         "max": 3.75
