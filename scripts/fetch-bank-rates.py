@@ -114,6 +114,13 @@ SOURCES = {
     # safely. These can.
     'fixed': 'https://www.bankbyaj.com/deposite',
     'base': 'https://www.bankbyaj.com/baserate',
+    # Term ladders. Also once in BY_HAND, and for a reason that has
+    # stopped applying: the objection was that banks bracket tenures
+    # differently, so mapping a bracket onto "1 year" is a judgement.
+    # This page has already made that judgement and publishes a Tenure
+    # column — "9 months", "2 years" — normalised across every bank,
+    # which is the whole difficulty handled consistently in one place.
+    'ladder': 'https://www.bankbyaj.com/detail/fd-individual',
 }
 
 # What is still left to a person.
@@ -122,9 +129,8 @@ SOURCES = {
 # months here, ninety days there, "upto 1 year" somewhere else — so
 # mapping a bracket onto "1 year" is a judgement rather than a parse,
 # and no aggregator publishes the ladders at all.
-BY_HAND = {
-    'term ladders': 'each bank\'s own rate sheet — see docs/bank-rates.md',
-}
+# Nothing left. Every column the app shows is fetched.
+BY_HAND: dict[str, str] = {}
 
 problems: list[str] = []
 
@@ -298,6 +304,61 @@ def scrape_spreads(url: str) -> dict[str, dict[str, float]]:
     }
 
 
+# The rungs the app draws. A tenure that is not one of these is a
+# product we do not have a column for, and is dropped rather than
+# rounded into the nearest — "18 months" is not a 1-year rate.
+LADDER_TERMS = {6: '6m', 12: '1y', 24: '2y', 60: '5y'}
+
+TENURE = re.compile(r'(?i)([\d.]+)\s*(month|year)')
+
+
+def tenure_months(text: str) -> int | None:
+    """
+    A tenure cell to a whole number of months, or None.
+
+    Fractional years are refused. The page writes a `>3Y to 5Y` bracket
+    as "3.08 years", which is the lower bound of a range rather than a
+    term anybody can deposit for; rounding it to 37 months and then to
+    the 5-year rung would put a bracket's floor in a column labelled as
+    its ceiling.
+    """
+    found = TENURE.search(text)
+    if not found:
+        return None
+    value, unit = float(found.group(1)), found.group(2).lower()
+    if unit == 'month':
+        return round(value)
+    return round(value * 12) if value == int(value) else None
+
+
+def scrape_ladders(url: str) -> dict[str, dict[str, float]]:
+    """
+    The fixed-deposit ladder per bank: term to the best rate at it.
+
+    One row per product, so a bank appears many times and the highest
+    rate at each term wins — the same rule the `best` column uses, and
+    the one a depositor would apply themselves.
+    """
+    html = get(url)
+    if not html:
+        return {}
+    out: dict[str, dict[str, float]] = {}
+    for line in table_rows_of(html):
+        bank_id = match_bank(line)
+        if not bank_id:
+            continue
+        values = percents(line)
+        if not values:
+            continue
+        months = tenure_months(line)
+        rung = LADDER_TERMS.get(months) if months else None
+        if not rung:
+            continue
+        rungs = out.setdefault(bank_id, {})
+        rungs[rung] = max(rungs.get(rung, 0.0), values[0])
+    return out
+
+
 def second_column(_line: str, values: list[float]) -> float | None:
     """
     The second percentage on the row.
@@ -350,6 +411,8 @@ def main() -> int:
     # First column of `Bank | Base Rate | NPA`. NPA is not a rate the
     # app shows and must not be mistaken for one.
     base = scrape_one_per_bank(SOURCES['base'], first_column, table_rows_of)
+    time.sleep(1)
+    ladders = scrape_ladders(SOURCES['ladder'])
 
     banks = []
     for bank_id, (name_en, name_ne, symbol, _) in BANKS.items():
@@ -367,13 +430,17 @@ def main() -> int:
         # differently and mapping a bracket onto a term is a judgement,
         # not a parse. Last month's are carried over for a human to
         # check against the sheet.
-        # The ladder is carried over — still a judgement, see BY_HAND —
-        # but `best` is now fetched, so last month's highest is replaced
-        # rather than kept. Carried over only when the fetch missed this
-        # bank, and the report says which.
-        ladder = dict(was.get('fixed', {}))
+        # Replaced wholesale for a bank we have rungs for, not merged
+        # into last month's. Merging would leave a row with a fresh
+        # 6-month rate beside a stale 2-year one and no way for a
+        # reader to tell which is which — the same objection the sheet
+        # already makes to folding one month over another. A bank the
+        # page does not list keeps its old ladder and is reported.
+        ladder = dict(ladders[bank_id]) if bank_id in ladders else dict(was.get('fixed', {}))
         if bank_id in fixed_best:
             ladder['best'] = fixed_best[bank_id]
+        elif 'best' in was.get('fixed', {}):
+            ladder['best'] = was['fixed']['best']
         if ladder:
             entry['fixed'] = ladder
 
@@ -407,6 +474,7 @@ def main() -> int:
         ('base rate', base),
         ('home loan', home),
         ('vehicle loan', auto),
+        ('term ladders', ladders),
     ):
         short = total - len(table)
         # A column that came up short says so here rather than being
@@ -415,9 +483,11 @@ def main() -> int:
         # from the table itself.
         carried = f'   ({short} carried over)' if short else ''
         print(f'    {label:16} {len(table):2}/{total}{carried}', file=sys.stderr)
-    print('  carried over from last sheet — update these by hand:', file=sys.stderr)
-    for what, where in BY_HAND.items():
-        print(f'    {what:16} {where}', file=sys.stderr)
+    if BY_HAND:
+        print('  carried over from last sheet — update these by hand:',
+              file=sys.stderr)
+        for what, where in BY_HAND.items():
+            print(f'    {what:16} {where}', file=sys.stderr)
     # A column that came back mostly empty is a parser that has stopped
     # working, not a month where fifteen banks withdrew a product. In
     # `--strict` — which is how the scheduled job runs it — that fails

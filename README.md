@@ -45,11 +45,18 @@ The interest-rate sheet the Market tab reads. **Rebuilt automatically** by
 Gregorian month — Bikram Sambat months begin between the 14th and the 18th,
 so twice a month avoids labelling a sheet with the wrong month's name.
 
-Four of the five columns are scraped: savings, fixed deposit, base rate and
-home loan come back for all nineteen banks, vehicle loan for most. **Term
-ladders are not scraped** — banks bracket tenures differently, so mapping a
-bracket onto "1 year" is a judgement — and carry over from the previous
-sheet until somebody updates them by hand.
+Every column is scraped. Savings, fixed deposit, base rate and home loan
+come back for all nineteen banks, vehicle loan and the term ladders for
+most; a bank the source does not list that month keeps last month's figure
+and the run says so.
+
+Term ladders were the last manual column, on the grounds that banks bracket
+tenures differently and mapping a bracket onto "1 year" is a judgement.
+`/detail/fd-individual` publishes a normalised Tenure column — "9 months",
+"2 years" — which makes that judgement once, consistently, for every bank.
+Fractional years are refused: the page writes a `>3Y to 5Y` bracket as
+"3.08 years", and that is a range's floor, not a term anybody can deposit
+for.
 
 Two guards, because the ways this fails are not the same:
 
