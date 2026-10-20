@@ -1,0 +1,401 @@
+{
+  "_comment": "Candidate sheet built by scripts/fetch-bank-rates.py. Review against the sources before publishing; term ladders are carried over from the previous sheet and must be checked by hand.",
+  "bs": {
+    "year": 2083,
+    "month": 7
+  },
+  "banks": [
+    {
+      "id": "prabhu",
+      "name": {
+        "en": "Prabhu Bank",
+        "ne": "प्रभु बैंक"
+      },
+      "symbol": "PRVU",
+      "savings": {
+        "min": 2.75,
+        "max": 3.0
+      },
+      "fixed": {
+        "best": 4.25
+      },
+      "loans": {
+        "base": 4.94,
+        "home": 5.94,
+        "auto": 5.94
+      }
+    },
+    {
+      "id": "machhapuchchhre",
+      "name": {
+        "en": "Machhapuchchhre Bank",
+        "ne": "माछापुच्छ्रे बैंक"
+      },
+      "symbol": "MBL",
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "best": 4.5
+      },
+      "loans": {
+        "base": 4.93,
+        "home": 5.43,
+        "auto": 5.43
+      }
+    },
+    {
+      "id": "nmb",
+      "name": {
+        "en": "NMB Bank",
+        "ne": "एनएमबी बैंक"
+      },
+      "symbol": "NMB",
+      "savings": {
+        "min": 2.75,
+        "max": 2.75
+      },
+      "fixed": {
+        "6m": 2.75,
+        "1y": 2.75,
+        "2y": 2.75,
+        "5y": 3.5,
+        "best": 4.5
+      },
+      "loans": {
+        "base": 5.01,
+        "home": 5.51,
+        "auto": 5.51
+      }
+    },
+    {
+      "id": "sanima",
+      "name": {
+        "en": "Sanima Bank",
+        "ne": "सानिमा बैंक"
+      },
+      "symbol": "SANIMA",
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "best": 4.5
+      },
+      "loans": {
+        "base": 4.71,
+        "home": 5.71,
+        "auto": 6.21
+      }
+    },
+    {
+      "id": "nimb",
+      "name": {
+        "en": "Nepal Investment Mega Bank",
+        "ne": "नेपाल इन्भेष्टमेन्ट मेगा बैंक"
+      },
+      "symbol": "NIMB",
+      "savings": {
+        "min": 2.76,
+        "max": 3.76
+      },
+      "fixed": {
+        "best": 3.7
+      },
+      "loans": {
+        "base": 4.55,
+        "home": 4.55,
+        "auto": 5.05
+      }
+    },
+    {
+      "id": "nabil",
+      "name": {
+        "en": "Nabil Bank",
+        "ne": "नबिल बैंक"
+      },
+      "symbol": "NABIL",
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "6m": 2.85,
+        "1y": 2.85,
+        "2y": 3.0,
+        "5y": 3.25,
+        "best": 3.75
+      },
+      "loans": {
+        "base": 4.41,
+        "home": 4.91,
+        "auto": 5.16
+      }
+    },
+    {
+      "id": "nepal-bank",
+      "name": {
+        "en": "Nepal Bank",
+        "ne": "नेपाल बैंक"
+      },
+      "symbol": "NBL",
+      "savings": {
+        "min": 2.75,
+        "max": 2.75
+      },
+      "fixed": {
+        "best": 4.15
+      },
+      "loans": {
+        "base": 4.41,
+        "home": 4.91,
+        "auto": 4.91
+      }
+    },
+    {
+      "id": "nsbi",
+      "name": {
+        "en": "Nepal SBI Bank",
+        "ne": "नेपाल एसबिआई बैंक"
+      },
+      "symbol": "SBI",
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "best": 4.0
+      },
+      "loans": {
+        "base": 5.11,
+        "home": 5.61
+      }
+    },
+    {
+      "id": "global-ime",
+      "name": {
+        "en": "Global IME Bank",
+        "ne": "ग्लोबल आइएमई बैंक"
+      },
+      "symbol": "GBIME",
+      "savings": {
+        "min": 2.75,
+        "max": 2.75
+      },
+      "fixed": {
+        "best": 4.0
+      },
+      "loans": {
+        "base": 4.64,
+        "home": 5.64,
+        "auto": 5.64
+      }
+    },
+    {
+      "id": "nic-asia",
+      "name": {
+        "en": "NIC Asia Bank",
+        "ne": "एनआईसी एशिया बैंक"
+      },
+      "symbol": "NICA",
+      "savings": {
+        "min": 2.75,
+        "max": 3.25
+      },
+      "fixed": {
+        "best": 4.0
+      },
+      "loans": {
+        "base": 5.69,
+        "home": 5.94,
+        "auto": 5.94
+      }
+    },
+    {
+      "id": "prime",
+      "name": {
+        "en": "Prime Commercial Bank",
+        "ne": "प्राइम कमर्सियल बैंक"
+      },
+      "symbol": "PCBL",
+      "savings": {
+        "min": 2.76,
+        "max": 3.02
+      },
+      "fixed": {
+        "best": 4.0
+      },
+      "loans": {
+        "base": 4.87,
+        "home": 4.87,
+        "auto": 4.87
+      }
+    },
+    {
+      "id": "rbb",
+      "name": {
+        "en": "Rastriya Banijya Bank",
+        "ne": "राष्ट्रिय वाणिज्य बैंक"
+      },
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "best": 4.0
+      },
+      "loans": {
+        "base": 4.01,
+        "home": 5.51,
+        "auto": 5.36
+      }
+    },
+    {
+      "id": "himalayan",
+      "name": {
+        "en": "Himalayan Bank",
+        "ne": "हिमालयन बैंक"
+      },
+      "symbol": "HBL",
+      "savings": {
+        "min": 2.75,
+        "max": 3.25
+      },
+      "fixed": {
+        "6m": 2.8,
+        "1y": 3.0,
+        "2y": 3.0,
+        "5y": 3.5,
+        "best": 4.0
+      },
+      "loans": {
+        "base": 5.09,
+        "home": 5.59,
+        "auto": 5.59
+      }
+    },
+    {
+      "id": "laxmi-sunrise",
+      "name": {
+        "en": "Laxmi Sunrise Bank",
+        "ne": "लक्ष्मी सनराइज बैंक"
+      },
+      "symbol": "LSL",
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "best": 4.0
+      },
+      "loans": {
+        "base": 4.94,
+        "home": 5.44,
+        "auto": 5.44
+      }
+    },
+    {
+      "id": "citizens",
+      "name": {
+        "en": "Citizens Bank",
+        "ne": "सिटिजन्स बैंक"
+      },
+      "symbol": "CZBIL",
+      "savings": {
+        "min": 2.75,
+        "max": 2.8
+      },
+      "fixed": {
+        "best": 3.85
+      },
+      "loans": {
+        "base": 4.97,
+        "home": 5.99,
+        "auto": 4.97
+      }
+    },
+    {
+      "id": "siddhartha",
+      "name": {
+        "en": "Siddhartha Bank",
+        "ne": "सिद्धार्थ बैंक"
+      },
+      "symbol": "SBL",
+      "savings": {
+        "min": 2.75,
+        "max": 3.05
+      },
+      "fixed": {
+        "6m": 2.75,
+        "1y": 2.75,
+        "2y": 2.75,
+        "5y": 3.05,
+        "best": 3.76
+      },
+      "loans": {
+        "base": 4.93,
+        "home": 5.99
+      }
+    },
+    {
+      "id": "scb",
+      "name": {
+        "en": "Standard Chartered Bank Nepal",
+        "ne": "स्ट्यान्डर्ड चार्टर्ड बैंक नेपाल"
+      },
+      "symbol": "SCB",
+      "savings": {
+        "min": 2.75,
+        "max": 2.75
+      },
+      "fixed": {
+        "best": 3.7
+      },
+      "loans": {
+        "base": 4.12,
+        "home": 5.99
+      }
+    },
+    {
+      "id": "everest",
+      "name": {
+        "en": "Everest Bank",
+        "ne": "एभरेष्ट बैंक"
+      },
+      "symbol": "EBL",
+      "savings": {
+        "min": 2.75,
+        "max": 3.75
+      },
+      "fixed": {
+        "best": 3.75
+      },
+      "loans": {
+        "base": 4.18,
+        "home": 5.18,
+        "auto": 5.18
+      }
+    },
+    {
+      "id": "kumari",
+      "name": {
+        "en": "Kumari Bank",
+        "ne": "कुमारी बैंक"
+      },
+      "symbol": "KBL",
+      "savings": {
+        "min": 2.76,
+        "max": 3.32
+      },
+      "fixed": {
+        "best": 3.4
+      },
+      "loans": {
+        "base": 4.92,
+        "home": 5.92,
+        "auto": 6.42
+      }
+    }
+  ]
+}

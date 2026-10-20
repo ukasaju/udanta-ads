@@ -37,3 +37,33 @@ dropped; if the whole file is bad the app keeps serving the last good copy. So
 a broken edit fails quietly — validate your JSON if a change does not appear.
 
 Full reference: `docs/ads.md` in the app repo.
+
+## bank-rates.json
+
+The interest-rate sheet the Market tab reads. **Rebuilt automatically** by
+`.github/workflows/bank-rates.yml`, which runs on the 1st and 16th of each
+Gregorian month — Bikram Sambat months begin between the 14th and the 18th,
+so twice a month avoids labelling a sheet with the wrong month's name.
+
+Four of the five columns are scraped: savings, fixed deposit, base rate and
+home loan come back for all nineteen banks, vehicle loan for most. **Term
+ladders are not scraped** — banks bracket tenures differently, so mapping a
+bracket onto "1 year" is a judgement — and carry over from the previous
+sheet until somebody updates them by hand.
+
+Two guards, because the ways this fails are not the same:
+
+- A column that returns fewer than three-quarters of the banks fails the
+  run. Without it a scrape can report success while every bank quietly
+  keeps last month's figure, which is what happened the first time the
+  fixed-deposit column was added.
+- A column whose median month-over-month move exceeds one point fails the
+  run. Rates move in fractions; a whole column shifting means a site added
+  a column and every figure is being read one cell out.
+
+Either way the old sheet stays published and the app keeps showing it with
+its own month on screen, which is the honest failure.
+
+Run it by hand from the Actions tab, optionally passing a Bikram Sambat
+year and month. The source is bankbyaj; see `docs/bank-rates.md` in the app
+repo for why one aggregator rather than nineteen banks' own sites.

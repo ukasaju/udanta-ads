@@ -1,0 +1,68 @@
+name: Bank rates
+
+# Rebuilds bank-rates.json, which the Udanta app reads at run time.
+#
+# This lives in the repo it writes to, on purpose. The first version
+# ran in the app's own repository and pushed across to this one, which
+# meant a personal access token, a secret to create and re-paste, and
+# an expiry to remember — three ways to fail before any rate is read.
+# Here the built-in GITHUB_TOKEN is enough.
+on:
+  schedule:
+    # The 1st and 16th: Bikram Sambat months begin between the 14th and
+    # the 18th, so twice a month avoids landing the wrong side of a
+    # rollover and labelling the sheet with last month's name.
+    - cron: '20 2 1,16 * *'
+  workflow_dispatch:
+    inputs:
+      bs_year:
+        description: 'Bikram Sambat year (blank = work it out from today)'
+        required: false
+      bs_month:
+        description: 'Bikram Sambat month 1-12 (blank = today)'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Work out the Nepali month
+        id: bs
+        run: |
+          if [ -n "${{ inputs.bs_year }}" ] && [ -n "${{ inputs.bs_month }}" ]; then
+            echo "year=${{ inputs.bs_year }}" >> "$GITHUB_OUTPUT"
+            echo "month=${{ inputs.bs_month }}" >> "$GITHUB_OUTPUT"
+          else
+            python3 scripts/bs-today.py >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Scrape
+        # --strict refuses to write when a column comes back thin or
+        # when a column's median month-over-month move says it has been
+        # misread. Both are failures worth a red run.
+        run: python3 scripts/fetch-bank-rates.py "${{ steps.bs.outputs.year }}" "${{ steps.bs.outputs.month }}" --strict
+
+      - name: Commit
+        run: |
+          git config user.name  "udanta-bot"
+          git config user.email "udanta-bot@users.noreply.github.com"
+          # Staged first, then checked against the index: an untracked
+          # new file is not a diff, so `git diff` alone would skip the
+          # very first run — which is exactly what it did.
+          git add bank-rates.json
+          if git diff --cached --quiet; then
+            echo "Rates unchanged since the last run; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Bank rates for ${{ steps.bs.outputs.year }}-${{ steps.bs.outputs.month }}"
+          git push
+          echo "Published bank-rates.json."
