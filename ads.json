@@ -3,7 +3,7 @@
   "updated": "2026-10-22",
   "ads": [
     {
-      "id": "appeal-flood-relief-en",
+      "id": "appeal-flood-relief",
       "lang": "en",
       "advertiser": "Udanta",
       "headline": "Help Nepal's flood survivors",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "appeal-flood-relief-ne",
+      "id": "appeal-flood-relief",
       "lang": "ne",
       "advertiser": "उदन्त",
       "headline": "बाढीपीडितलाई सहयोग गरौं",
@@ -70,7 +70,7 @@
       },
       "active": true,
       "startsAt": "2026-09-10T18:15:00Z",
-      "endsAt": "2026-10-23T18:15:00Z",
+      "endsAt": "2026-10-25T18:15:00Z",
       "weight": 9,
       "placements": [
         "banner"
@@ -96,7 +96,7 @@
       },
       "active": true,
       "startsAt": "2026-09-10T18:15:00Z",
-      "endsAt": "2026-10-23T18:15:00Z",
+      "endsAt": "2026-10-25T18:15:00Z",
       "weight": 9,
       "placements": [
         "banner"
