@@ -21,7 +21,7 @@
         "accent": "#FFC44B"
       },
       "active": true,
-      "weight": 10,
+      "weight": 9,
       "placements": [
         "banner"
       ]
@@ -45,7 +45,7 @@
         "accent": "#FFC44B"
       },
       "active": true,
-      "weight": 10,
+      "weight": 9,
       "placements": [
         "banner"
       ]
@@ -71,7 +71,7 @@
       "active": true,
       "startsAt": "2026-09-10T18:15:00Z",
       "endsAt": "2026-10-25T18:15:00Z",
-      "weight": 9,
+      "weight": 8,
       "placements": [
         "banner"
       ]
@@ -97,7 +97,7 @@
       "active": true,
       "startsAt": "2026-09-10T18:15:00Z",
       "endsAt": "2026-10-25T18:15:00Z",
-      "weight": 9,
+      "weight": 8,
       "placements": [
         "banner"
       ]
@@ -123,7 +123,7 @@
       "active": true,
       "startsAt": "2026-11-06T18:15:00Z",
       "endsAt": "2026-11-12T18:15:00Z",
-      "weight": 8,
+      "weight": 7,
       "placements": [
         "banner",
         "feed"
@@ -150,7 +150,7 @@
       "active": true,
       "startsAt": "2026-11-06T18:15:00Z",
       "endsAt": "2026-11-12T18:15:00Z",
-      "weight": 8,
+      "weight": 7,
       "placements": [
         "banner",
         "feed"
