@@ -3,7 +3,7 @@
   "updated": "2026-10-18",
   "ads": [
     {
-      "id": "appeal-flood-relief-en",
+      "id": "appeal-flood-relief",
       "lang": "en",
       "advertiser": "Udanta",
       "headline": "Help Nepal's flood survivors",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "appeal-flood-relief-ne",
+      "id": "appeal-flood-relief",
       "lang": "ne",
       "advertiser": "उदन्त",
       "headline": "बाढीपीडितलाई सहयोग गरौं",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "id": "greeting-dashain-2083-en",
+      "id": "greeting-dashain-2083",
       "lang": "en",
       "advertiser": "Udanta",
       "headline": "Happy Dashain !!",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "id": "greeting-dashain-2083-ne",
+      "id": "greeting-dashain-2083",
       "lang": "ne",
       "advertiser": "उदन्त",
       "headline": "शुभ दशैं !!",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "id": "greeting-tihar-2083-en",
+      "id": "greeting-tihar-2083",
       "lang": "en",
       "advertiser": "Udanta",
       "headline": "Happy Tihar !!",
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "id": "greeting-tihar-2083-ne",
+      "id": "greeting-tihar-2083",
       "lang": "ne",
       "advertiser": "उदन्त",
       "headline": "शुभ तिहार !!",
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "id": "share-udanta-en",
+      "id": "share-udanta",
       "lang": "en",
       "advertiser": "Udanta",
       "headline": "Enjoying Udanta?",
@@ -187,7 +187,7 @@
       "audiences": []
     },
     {
-      "id": "share-udanta-ne",
+      "id": "share-udanta",
       "lang": "ne",
       "advertiser": "उदन्त",
       "headline": "उदन्त मन पर्‍यो?",
