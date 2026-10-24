@@ -1,0 +1,54 @@
+name: Forex mirror
+
+# NRB sets rates once a day, so this asks once a day — plus a few
+# retries spread across the morning, because the publish time moves
+# and because their server is not always up when asked.
+#
+# One scheduled fetch serves every install. The alternative, which is
+# what the app did until now, was every phone asking NRB several times
+# a day for a number that changes once — and during the outage of
+# 24 October 2026, four timeouts apiece before showing nothing.
+on:
+  schedule:
+    # 03:00, 05:00, 08:00 UTC — 08:45, 10:45, 13:45 Nepal time.
+    - cron: '0 3,5,8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch from NRB
+        id: fetch
+        # Not `continue-on-error`, because a failure here should be
+        # visible — but also not fatal to the job, since the mirror
+        # being unchanged is a perfectly good outcome.
+        run: python3 scripts/fetch-forex.py
+        continue-on-error: true
+
+      - name: Commit when the rates moved
+        run: |
+          git config user.name  "udanta-bot"
+          git config user.email "udanta-bot@users.noreply.github.com"
+          git add forex.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No new rates this run."
+            exit 0
+          fi
+          git commit -m "Forex rates $(date -u +%F)"
+          git push
+          echo "Published forex.json."
+
+      - name: Say so if NRB was unreachable
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::warning::NRB was unreachable; the mirror still holds the last good rates."
