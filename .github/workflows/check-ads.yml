@@ -1,0 +1,25 @@
+name: Check ads
+
+# Every edit to ads.json, on push and on pull request.
+#
+# This file is edited by hand and read by every install, with nothing
+# in between. A missing comma took all ten ads off every new install
+# and nothing reported it: the app catches a parse failure and serves
+# its cache, so existing phones carried on as normal while fresh ones
+# showed nothing at all.
+on:
+  push:
+    paths: ['ads.json', 'scripts/check-ads.py', '.github/workflows/check-ads.yml']
+  pull_request:
+    paths: ['ads.json']
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 scripts/check-ads.py
