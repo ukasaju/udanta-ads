@@ -59,8 +59,14 @@ def main() -> int:
         print('no ads array', file=sys.stderr)
         return 1
 
+    # Ids the app ships a copy of, and suppresses its own copy of when
+    # the published file uses the same one. Renaming these does not
+    # create a new ad, it un-suppresses the bundled twin and the reader
+    # sees it twice.
+    BUNDLED_IDS = {'appeal-flood-relief'}
+
     problems: list[str] = []
-    seen: set[str] = set()
+    seen: set[tuple] = set()
 
     for index, ad in enumerate(ads):
         where = ad.get('id') or f'ad #{index + 1}'
@@ -89,11 +95,36 @@ def main() -> int:
         if lang not in (None, 'en', 'ne'):
             problems.append(f'{where}: lang must be en, ne or absent — got {lang!r}')
 
-        if ad.get('id') in seen:
-            # Not fatal to the parser, but two ads with one id is a
-            # React key collision and one of them will not render.
-            problems.append(f'{where}: duplicate id')
-        seen.add(ad.get('id'))
+        # Two ads may share an id when they differ by language — that is
+        # how the same creative is published in both, and only one
+        # language is ever served at a time. Sharing an id *within* one
+        # language is a React key collision and one of them will not
+        # render.
+        #
+        # More than tidiness: the app suppresses its bundled copy of an
+        # appeal when the published file carries the same id. Rename the
+        # published one and both serve, so the reader sees the appeal
+        # twice and it pushes another ad out of the strip. The id is
+        # load-bearing, so this check must not encourage changing it.
+        key = (ad.get('id'), ad.get('lang'))
+        if key in seen:
+            problems.append(f'{where}: duplicate id for lang={ad.get("lang")!r}')
+        seen.add(key)
+
+    # A warning rather than a failure: an appeal may legitimately be
+    # retired from the published file, and this cannot tell that from a
+    # rename. But a rename is the likelier mistake and it is invisible
+    # in the app except as a duplicated banner.
+    published_ids = {ad.get('id') for ad in ads}
+    for bundled in sorted(BUNDLED_IDS - published_ids):
+        near = [i for i in published_ids if isinstance(i, str) and i.startswith(bundled)]
+        if near:
+            print(
+                f'warning: {near[0]!r} looks like a renamed {bundled!r}. The app '
+                f'only suppresses its bundled copy on an exact id match, so both '
+                f'will serve and the reader will see it twice.',
+                file=sys.stderr,
+            )
 
     if problems:
         print(f'{len(problems)} problem(s) in {ADS.name}:', file=sys.stderr)
