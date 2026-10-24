@@ -1,0 +1,13 @@
+name: Probe NRB
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "--- TCP ---"
+          timeout 15 bash -c 'cat < /dev/null > /dev/tcp/www.nrb.org.np/443' && echo "443 OPEN" || echo "443 refused"
+          echo "--- API ---"
+          curl -s -m 25 -o /tmp/n.json -w "HTTP %{http_code}  %{size_download}B\n" \
+            "https://www.nrb.org.np/api/forex/v1/rates?page=1&per_page=2" || true
+          head -c 300 /tmp/n.json || true
