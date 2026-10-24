@@ -30,6 +30,25 @@ Optional: `body`, `media`, `active`, `startsAt`, `endsAt`, `weight` (1–10),
 Set `"active": false` rather than deleting it, so there is still a record of
 what ran. `disabled` holds ids of creatives built into the app itself.
 
+## Why one appeal row has no `_en` / `_ne`
+
+Every other creative here is published once per language, because the app keeps
+one ad per `id` — two rows sharing an id and the second one silently wins, so
+each language needs its own. `appeal-flood-relief` breaks that on purpose.
+
+The app also ships a copy of the flood appeal, for a first launch with no
+connection, and builds up to 1.4.1 suppress that copy only when they see its
+exact id — `appeal-flood-relief`, with no language tag — in this file. While
+both rows carried a tag, nothing matched, and those builds ran the appeal twice
+in the same banner: once from the bundled copy, once from here.
+
+So the Nepali row keeps the bare id and the English row keeps `_en`. One of the
+two is enough: the match switches off the bundled copy for both languages at
+once. **Do not tidy the bare id into `appeal-flood-relief_ne`** — that is the
+edit that caused it. From 1.4.2 the app matches on the `appeal-` prefix instead
+and the naming stops mattering, but 1.4.1 installs will be out there for a
+while yet.
+
 ## Rules the app enforces
 
 Links must be `https://`. Images must be `https://`. Anything malformed is
