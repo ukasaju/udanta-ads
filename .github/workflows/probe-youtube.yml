@@ -1,0 +1,28 @@
+# Temporary. Answers one question: does YouTube's RSS endpoint refuse the
+# app's User-Agent, or is it refusing a particular IP? Run from GitHub's
+# network, which is not the developer's. Delete once answered.
+name: Probe YouTube
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask the same feed three ways
+        run: |
+          ID=UCXAEisvouf1Tp5fuoKJUrgw
+          URL="https://www.youtube.com/feeds/videos.xml?channel_id=$ID"
+          BROWSER='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
+
+          probe () {
+            name="$1"; shift
+            code=$(curl -s -o /tmp/body -w '%{http_code}' "$@" "$URL" || echo 000)
+            entries=$(grep -c '<entry>' /tmp/body 2>/dev/null || echo 0)
+            echo "RESULT $name http=$code entries=$entries"
+            sleep 20
+          }
+
+          probe browser-ua -A "$BROWSER"
+          probe curl-default
+          probe no-ua -H 'User-Agent:'
