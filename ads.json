@@ -23,7 +23,9 @@
       "active": true,
       "weight": 10,
       "placements": [
-        "banner"
+        "banner",
+        "market",
+        "vlog"
       ]
     },
     {
@@ -47,7 +49,9 @@
       "active": true,
       "weight": 10,
       "placements": [
-        "banner"
+        "banner",
+        "market",
+        "vlog"
       ]
     },
     {
@@ -73,7 +77,9 @@
       "endsAt": "2026-10-25T18:15:00Z",
       "weight": 8,
       "placements": [
-        "banner"
+        "banner",
+        "market",
+        "vlog"
       ]
     },
     {
@@ -99,7 +105,9 @@
       "endsAt": "2026-10-25T18:15:00Z",
       "weight": 8,
       "placements": [
-        "banner"
+        "banner",
+        "market",
+        "vlog"
       ]
     },
     {
@@ -126,7 +134,9 @@
       "weight": 7,
       "placements": [
         "banner",
-        "feed"
+        "feed",
+        "market",
+        "vlog"
       ]
     },
     {
@@ -153,7 +163,9 @@
       "weight": 7,
       "placements": [
         "banner",
-        "feed"
+        "feed",
+        "market",
+        "vlog"
       ]
     },
     {
@@ -182,7 +194,9 @@
       "active": true,
       "weight": 3,
       "placements": [
-        "banner"
+        "banner",
+        "market",
+        "vlog"
       ],
       "audiences": []
     },
@@ -212,7 +226,9 @@
       "active": true,
       "weight": 3,
       "placements": [
-        "banner"
+        "banner",
+        "market",
+        "vlog"
       ],
       "audiences": []
     },
@@ -273,7 +289,9 @@
       "placements": [
         "banner",
         "feed",
-        "card"
+        "card",
+        "market",
+        "vlog"
       ],
       "audiences": [
         "nepal",
@@ -337,7 +355,9 @@
       "placements": [
         "banner",
         "feed",
-        "card"
+        "card",
+        "market",
+        "vlog"
       ],
       "audiences": [
         "nepal",
