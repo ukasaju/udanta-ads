@@ -1,0 +1,19 @@
+name: Probe YouTube
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Can a runner read these feeds at all?
+        run: |
+          for ID in UCXAEisvouf1Tp5fuoKJUrgw UCxMMePKBj8N_pjmsUJ3wOyQ UCswjHGDAfchSHs7gcxwdZNw; do
+            for attempt in 1 2 3; do
+              code=$(curl -s -o /tmp/b -w '%{http_code}' --compressed \
+                     "https://www.youtube.com/feeds/videos.xml?channel_id=$ID" || echo 000)
+              n=$(grep -c '<entry>' /tmp/b 2>/dev/null || echo 0)
+              echo "RESULT $ID try$attempt http=$code entries=$n"
+              [ "$code" = "200" ] && break
+              sleep 15
+            done
+          done
