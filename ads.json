@@ -235,6 +235,12 @@
       "body": "1,850 sq ft, two baths and a garage.",
       "cta": "See the flat",
       "url": "app://promo",
+      "tint": {
+        "background": "#6E1220",
+        "text": "#FFFFFF",
+        "muted": "#A9D3CE",
+        "accent": "#FFD166"
+      },
       "media": {
         "type": "image",
         "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
@@ -302,7 +308,7 @@
       "cta": "अपार्टमेन्ट हेर्नुहोस्",
       "url": "app://promo",
       "tint": {
-        "background": "#12504B",
+        "background": "#6E1220",
         "text": "#FFFFFF",
         "muted": "#A9D3CE",
         "accent": "#FFD166"
