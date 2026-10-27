@@ -1,0 +1,7 @@
+{
+  "_comment": "The latest version on each store, for the in-app update notice. iOS is NOT read from here - it comes from Apple's own lookup API and needs no maintenance. Android has no such API, so this number is updated by hand when a Play release goes live. Leaving it behind the real release means nobody is told; that is the known cost of there being no Google equivalent.",
+  "android": {
+    "version": "1.5.0",
+    "url": "https://play.google.com/store/apps/details?id=com.udanta.app"
+  }
+}
