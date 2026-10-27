@@ -96,19 +96,38 @@ repo for why one aggregator rather than nineteen banks' own sites.
 
 ## The share creative
 
-`share-udanta-en` and `share-udanta-ne` carry both store links inside their
-`text`, each under its own label and separated by a blank line, rather than in
-the `ios` and `android` fields the schema also allows.
+`share-udanta-en` and `share-udanta-ne` currently carry both store links
+inside their `text`, each under its own label and separated by a blank line,
+rather than in the `ios` and `android` fields the schema also allows.
 
-That is deliberate. The app joins `ios` and `android` with a single newline,
-so when they are set the two urls arrive on consecutive lines and read as one
-wrapped address — the person receiving the message cannot see they have been
-given a choice of store. Putting the links in `text` is the only way to space
-and label them without shipping a new build.
+That is a temporary shape, and it is worth knowing why. Udanta 1.5.0 joins
+`ios` and `android` with a single newline, so with those fields set the two
+urls arrive on consecutive lines and read as one wrapped address — the person
+receiving the message cannot see they have been given a choice of store.
+Moving the links into `text` was the only way to fix that without waiting for
+a release. The cost is the two small store glyphs beside the advertiser name
+in the ad, which are driven by those same fields and no longer appear.
 
-The cost is that the two small store glyphs beside the advertiser name in the
-ad are driven by those same `ios`/`android` fields, so they no longer appear.
+**The app has since been fixed** (Udanta commit `e981c87`): it now writes the
+headings and the blank lines itself, in both languages, and treats empty
+`ios`/`android` as "the text is already complete" so it will not print the
+links twice against the feed as it stands today.
 
-**Do not put the links back into `ios`/`android`** unless the app has been
-changed to separate and label them itself — otherwise the links silently run
-together again.
+### Switch it back once a build after 1.5.0 is live
+
+Not before. Doing it early puts every 1.5.0 install back to running the two
+urls together, which is the thing this was fixing. Once a newer build is the
+one people have, restore the structured fields:
+
+```json
+"share": {
+  "text": "Udanta — Nepali news from every major publisher, in one place.",
+  "ios": "https://apps.apple.com/app/id6812846563",
+  "android": "https://play.google.com/store/apps/details?id=com.udanta.app"
+}
+```
+
+and the Nepali creative's `text` back to
+`"उदन्त — सबै प्रमुख नेपाली समाचार एकै ठाउँमा।"`. The glyphs return with the
+fields. The message a reader sees does not change at all — the app's own
+formatting was checked to be byte-identical to what the feed sends today.
