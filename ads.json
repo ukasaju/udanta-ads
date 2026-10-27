@@ -235,7 +235,7 @@
       "body": "1,850 sq ft, two baths and a garage.",
       "cta": "See the flat",
       "url": "app://promo",
-       "tint": {
+      "tint": {
         "background": "#6E1220",
         "text": "#FFFFFF",
         "muted": "#F2CBC4",
@@ -307,7 +307,7 @@
       "body": "१,८५० वर्गफिट, दुई बाथरुम र ग्यारेज।",
       "cta": "अपार्टमेन्ट हेर्नुहोस्",
       "url": "app://promo",
-       "tint": {
+      "tint": {
         "background": "#6E1220",
         "text": "#FFFFFF",
         "muted": "#F2CBC4",
