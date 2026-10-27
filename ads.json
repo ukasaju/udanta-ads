@@ -1,6 +1,6 @@
 {
   "_comment": "Udanta published ads. Editing this file changes what every install shows on its next launch. See README.md.",
-  "updated": "2026-10-18",
+  "updated": "2026-10-27",
   "ads": [
     {
       "id": "appeal-flood-relief_en",
@@ -177,9 +177,7 @@
       "cta": "Share",
       "url": "app://share",
       "share": {
-        "text": "Udanta — Nepali news from every major publisher, in one place.",
-        "ios": "https://apps.apple.com/app/id6812846563",
-        "android": "https://play.google.com/store/apps/details?id=com.udanta.app"
+        "text": "Udanta — Nepali news from every major publisher, in one place.\n\niPhone\nhttps://apps.apple.com/app/id6812846563\n\nAndroid\nhttps://play.google.com/store/apps/details?id=com.udanta.app"
       },
       "media": {
         "type": "image",
@@ -209,9 +207,7 @@
       "cta": "बाँड्नुहोस्",
       "url": "app://share",
       "share": {
-        "text": "उदन्त — सबै प्रमुख नेपाली समाचार एकै ठाउँमा।",
-        "ios": "https://apps.apple.com/app/id6812846563",
-        "android": "https://play.google.com/store/apps/details?id=com.udanta.app"
+        "text": "उदन्त — सबै प्रमुख नेपाली समाचार एकै ठाउँमा।\n\nआइफोन\nhttps://apps.apple.com/app/id6812846563\n\nएन्ड्रोइड\nhttps://play.google.com/store/apps/details?id=com.udanta.app"
       },
       "media": {
         "type": "image",

@@ -93,3 +93,22 @@ its own month on screen, which is the honest failure.
 Run it by hand from the Actions tab, optionally passing a Bikram Sambat
 year and month. The source is bankbyaj; see `docs/bank-rates.md` in the app
 repo for why one aggregator rather than nineteen banks' own sites.
+
+## The share creative
+
+`share-udanta-en` and `share-udanta-ne` carry both store links inside their
+`text`, each under its own label and separated by a blank line, rather than in
+the `ios` and `android` fields the schema also allows.
+
+That is deliberate. The app joins `ios` and `android` with a single newline,
+so when they are set the two urls arrive on consecutive lines and read as one
+wrapped address — the person receiving the message cannot see they have been
+given a choice of store. Putting the links in `text` is the only way to space
+and label them without shipping a new build.
+
+The cost is that the two small store glyphs beside the advertiser name in the
+ad are driven by those same `ios`/`android` fields, so they no longer appear.
+
+**Do not put the links back into `ios`/`android`** unless the app has been
+changed to separate and label them itself — otherwise the links silently run
+together again.
