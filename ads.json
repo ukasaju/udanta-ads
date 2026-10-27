@@ -301,6 +301,12 @@
       "body": "१,८५० वर्गफिट, दुई बाथरुम र ग्यारेज।",
       "cta": "अपार्टमेन्ट हेर्नुहोस्",
       "url": "app://promo",
+      "tint": {
+        "background": "#12504B",
+        "text": "#FFFFFF",
+        "muted": "#A9D3CE",
+        "accent": "#FFD166"
+      },
       "media": {
         "type": "image",
         "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
