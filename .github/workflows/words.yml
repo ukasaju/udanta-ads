@@ -1,0 +1,42 @@
+name: Word lists
+
+# Word fit began repeating itself within two days and nothing noticed for
+# weeks, because a word list does not break loudly — it quietly gets
+# boring. This is what notices.
+#
+# On every change to the lists, and once a week regardless: a band that has
+# shrunk fails the run, a band that is merely thin is reported and lets it
+# pass. Blocking unrelated work on vocabulary that has to be written by
+# hand is how a check gets switched off.
+on:
+  push:
+    paths:
+      - 'words.json'
+      - 'scripts/check-words.py'
+  pull_request:
+    paths:
+      - 'words.json'
+  schedule:
+    # Mondays, early. Nobody is waiting on the answer.
+    - cron: '40 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Two commits, so the run can see what the bands were before.
+          fetch-depth: 2
+
+      - name: Take the published lists as the baseline
+        run: |
+          if git show HEAD~1:words.json > /tmp/baseline-words.json 2>/dev/null; then
+            echo "baseline=/tmp/baseline-words.json" >> "$GITHUB_ENV"
+          else
+            echo "no previous words.json — checking without a baseline"
+          fi
+
+      - name: Check
+        run: python3 scripts/check-words.py ${{ env.baseline }}
