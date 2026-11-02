@@ -12,7 +12,7 @@
       "url": "https://pmdrf.nchl.com.np/",
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/flood-relief.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/flood-relief.webp"
       },
       "tint": {
         "background": "#0B3A66",
@@ -38,7 +38,7 @@
       "url": "https://pmdrf.nchl.com.np/",
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/flood-relief.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/flood-relief.webp"
       },
       "tint": {
         "background": "#0B3A66",
@@ -64,7 +64,7 @@
       "url": "app://calendar",
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/dashain.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/dashain.webp"
       },
       "tint": {
         "background": "#6E1220",
@@ -92,7 +92,7 @@
       "url": "app://calendar",
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/dashain.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/dashain.webp"
       },
       "tint": {
         "background": "#6E1220",
@@ -120,7 +120,7 @@
       "url": "app://calendar",
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/tihar.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/tihar.webp"
       },
       "tint": {
         "background": "#1A1140",
@@ -149,7 +149,7 @@
       "url": "app://calendar",
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/tihar.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/tihar.webp"
       },
       "tint": {
         "background": "#1A1140",
@@ -181,7 +181,7 @@
       },
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/share.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/share.webp"
       },
       "tint": {
         "background": "#12504B",
@@ -211,7 +211,7 @@
       },
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/share.png"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/house/share.webp"
       },
       "tint": {
         "background": "#12504B",
@@ -243,41 +243,41 @@
       },
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-1.webp"
       },
       "promo": {
         "media": [
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-1.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_2.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-2.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_3.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-3.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_7.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-7.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_8.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-8.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_6.jpeg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-6.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_4.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-4.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_5.jpeg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-5.webp"
           }
         ],
         "headline": "For Rent: Furnished 3BHK at Indreni, Bhatbhateni",
@@ -315,41 +315,41 @@
       },
       "media": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+        "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-1.webp"
       },
       "promo": {
         "media": [
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/indreni-1.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-1.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_2.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-2.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_3.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-3.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_7.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-7.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_8.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-8.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_6.jpeg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-6.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_4.jpg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-4.webp"
           },
           {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/ukasaju/udanta-ads/main/Indreni_5.jpeg"
+            "url": "https://cdn.udanta.udantasolutions.com/ads/indreni/indreni-5.webp"
           }
         ],
         "headline": "इन्द्रेणी अपार्टमेन्ट, भाटभटेनी — फर्निश्ड ३ बेडरुम",
